@@ -1,0 +1,15 @@
+{
+  "name": "search_emails",
+  "description": "Search Gmail with Gmail's search syntax (for example 'is:unread in:inbox', 'from:school newer_than:7d', 'subject:invoice after:2026/09/01', 'label:Family has:attachment') and return the newest matches with sender, subject, date, labels, unread status and a short preview. Covers all mail except Spam and Trash; add in:inbox to limit it to the inbox. Pass a message's id to read_email for the full text.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "query": {
+      "type": "string",
+      "description": "A Gmail search query, exactly as typed into Gmail's search box."
+    },
+    "max_results": {
+      "type": "integer",
+      "description": "How many of the newest matches to return, 1 to 25. Defaults to 10."
+    }
+  }
+}

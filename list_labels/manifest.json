@@ -1,0 +1,6 @@
+{
+  "name": "list_labels",
+  "description": "List the labels the user has created in Gmail, for use with label: in search_emails. System folders are searched with in:inbox, in:sent, is:starred and similar instead.",
+  "entrypoint": "run.py",
+  "parameters": {}
+}

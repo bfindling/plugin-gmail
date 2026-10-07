@@ -1,0 +1,11 @@
+{
+  "name": "read_email",
+  "description": "Read one email in full: headers, plain-text body (long bodies are cut off) and the names and sizes of its attachments. Does not mark it as read.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "id": {
+      "type": "string",
+      "description": "The message id returned by search_emails."
+    }
+  }
+}
